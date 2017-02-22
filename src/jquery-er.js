@@ -35,7 +35,7 @@ var er = {
         if (typeof v == 'Object') {
             for (var i in obj) {
                 if (!obj.hasOwnProperty(i)) continue;
-                if (i.indexOf(key)) {
+                if (i.indexOf(key) != -1) {
                     delete obj[i];
                 }
             }
