@@ -26,7 +26,7 @@ var er = {
         return this.count(v) > 0
     },
     ucfirst : function (str) {
-        str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+        return str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
             return letter.toUpperCase();
         });
     }
