@@ -32,15 +32,19 @@ var er = {
         });
     },
     like2Delete : function (obj, key) {
+        console.log("sdfsdf");
+        return false;
         if (typeof obj == 'Object') {
+            console.log("sadsad")
             for (var i in obj) {
+                console.log("eeee")
                 if (!obj.hasOwnProperty(i)) continue;
+                console.log(i.indexOf(key))
                 if (i.indexOf(key) != -1) {
                     delete obj[i];
                 }
             }
         }
     }
-
 };
 
