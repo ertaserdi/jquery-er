@@ -32,7 +32,7 @@ var er = {
         });
     },
     like2Delete : function (obj, key) {
-        if (typeof v == 'Object') {
+        if (typeof obj == 'Object') {
             for (var i in obj) {
                 if (!obj.hasOwnProperty(i)) continue;
                 if (i.indexOf(key) != -1) {
