@@ -23,12 +23,23 @@ var er = {
         }
     },
     isset : function (v) {
+        // hasOwnProperty
         return this.count(v) > 0
     },
     ucfirst : function (str) {
         return str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
             return letter.toUpperCase();
         });
+    },
+    like2Delete : function (obj, key) {
+        if (typeof v == 'Object') {
+            for (var i in obj) {
+                if (!obj.hasOwnProperty(i)) continue;
+                if (i.indexOf(key)) {
+                    delete obj[i];
+                }
+            }
+        }
     }
 
 };
